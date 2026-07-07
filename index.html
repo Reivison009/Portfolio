@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Reivison</title>
+    
+    <!-- Fonte Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome (Ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Devicon (Logos de Tecnologia) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+    <!-- CSS Externo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo">Reivison<span>Dev</span></div>
+        <button class="dark-toggle" id="darkToggle" aria-label="Alternar modo escuro">
+            <i class="fas fa-moon"></i> <span id="toggleText">Dark</span>
+        </button>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="badge"><i class="fas fa-circle"></i> Desenvolvedor Full-Stack</div>
+            <h1>Olá, eu sou<br><span class="highlight">Reivison</span></h1>
+            <p>Desenvolvedor apaixonado por tecnologia, criando soluções modernas, funcionais e com design profissional.</p>
+        </div>
+        <div class="hero-image">
+            <div class="avatar"><i class="fas fa-code"></i></div>
+        </div>
+        <div class="scroll-indicator">
+            <span class="arrow">↓</span>
+            <span>Role para baixo</span>
+        </div>
+    </section>
+
+    <section id="sobre" class="section reveal">
+        <div class="section-header">
+            <h2>Sobre <span>Mim</span></h2>
+            <p class="subtitle">Conheça um pouco da minha história</p>
+        </div>
+        <div class="about-content reveal">
+            <p>Meu nome é <span class="highlight-text">Reivison</span> e sou um desenvolvedor apaixonado por tecnologia e programação. Gosto de criar soluções modernas, funcionais e com um design profissional.</p>
+            <p>Tenho experiência no desenvolvimento de bots para Discord, sites responsivos, landing pages, painéis administrativos (dashboards) e sistemas personalizados. Trabalho principalmente com <strong>Python, HTML, CSS, JavaScript e Java</strong>, buscando sempre escrever código organizado, eficiente e fácil de manter.</p>
+            <p>Meu objetivo é transformar ideias em projetos de alta qualidade, oferecendo interfaces bonitas, boa experiência para o usuário e desempenho otimizado. Estou sempre aprendendo novas tecnologias e aprimorando minhas habilidades para criar projetos cada vez mais completos.</p>
+            <p>Além da programação, gosto de explorar novas ferramentas, desenvolver projetos criativos e enfrentar desafios que me permitam evoluir como desenvolvedor.</p>
+        </div>
+    </section>
+
+    <!-- ===== TIMELINE INTERATIVA ===== -->
+    <section id="experiencia" class="section reveal">
+        <div class="section-header reveal">
+            <h2>Minha <span>Jornada</span></h2>
+            <p class="subtitle">Clique em um ano para ver os detalhes</p>
+        </div>
+        <div class="timeline reveal">
+
+            <div class="timeline-item" onclick="toggleTimeline(this)">
+                <div class="header-content">
+                    <div>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 2022</span>
+                        <h3>Início dos Estudos</h3>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="description">
+                    <p>Comecei minha jornada na programação com Python e lógica de programação. Descobri a paixão por resolver problemas e criar soluções.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(this)">
+                <div class="header-content">
+                    <div>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 2023</span>
+                        <h3>Primeiros Projetos</h3>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="description">
+                    <p>Desenvolvi meus primeiros bots para Discord e sites estáticos. Aprendi HTML, CSS e JavaScript na prática.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(this)">
+                <div class="header-content">
+                    <div>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 2024</span>
+                        <h3>Especialização Full-Stack</h3>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="description">
+                    <p>Aprofundei conhecimentos em Java, APIs, banco de dados e design responsivo. Criei dashboards e sistemas personalizados.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(this)">
+                <div class="header-content">
+                    <div>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 2025</span>
+                        <h3>Portfólio e Projetos Reais</h3>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="description">
+                    <p>Desenvolvi projetos para clientes, landing pages de alto impacto e soluções completas. Foco em UI/UX e performance.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item" onclick="toggleTimeline(this)">
+                <div class="header-content">
+                    <div>
+                        <span class="date"><i class="fas fa-calendar-alt"></i> 2026</span>
+                        <h3>Atualmente</h3>
+                    </div>
+                    <div class="toggle-icon"><i class="fas fa-chevron-down"></i></div>
+                </div>
+                <div class="description">
+                    <p>Continuo evoluindo, explorando novas tecnologias e criando projetos cada vez mais completos e inovadores.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="habilidades" class="section reveal">
+        <div class="section-header reveal">
+            <h2>Minhas <span>Habilidades</span></h2>
+            <p class="subtitle">Clique em uma linguagem para ver seu ícone</p>
+        </div>
+        <div class="skills-grid reveal">
+
+            <div class="skill-group reveal">
+                <h3>⚙️ <span>Linguagens</span></h3>
+                <div class="skill-tags" id="tech-tags">
+                    <span class="skill-tag" data-icon="devicon-python-plain"><i class="devicon-python-plain"></i> Python</span>
+                    <span class="skill-tag" data-icon="devicon-html5-plain"><i class="devicon-html5-plain"></i> HTML5</span>
+                    <span class="skill-tag" data-icon="devicon-css3-plain"><i class="devicon-css3-plain"></i> CSS3</span>
+                    <span class="skill-tag" data-icon="devicon-javascript-plain"><i class="devicon-javascript-plain"></i> JavaScript</span>
+                    <span class="skill-tag" data-icon="devicon-java-plain"><i class="devicon-java-plain"></i> Java</span>
+                    <span class="skill-tag" data-icon="devicon-git-plain"><i class="devicon-git-plain"></i> Git</span>
+                    <span class="skill-tag" data-icon="fas fa-link"><i class="fas fa-link"></i> APIs</span>
+                    <span class="skill-tag" data-icon="fas fa-database"><i class="fas fa-database"></i> Banco de Dados</span>
+                </div>
+            </div>
+
+            <div class="skill-group reveal">
+                <h3>🚀 <span>Especialidades</span></h3>
+                <div class="skill-tags" id="especialidade-tags">
+                    <span class="skill-tag especialidade" data-icon="fab fa-discord"><i class="fab fa-discord"></i> Bots para Discord</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-globe"><i class="fas fa-globe"></i> Desenvolvimento Web</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-file-alt"><i class="fas fa-file-alt"></i> Landing Pages</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-chart-pie"><i class="fas fa-chart-pie"></i> Dashboards</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-cogs"><i class="fas fa-cogs"></i> Sistemas Personalizados</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-robot"><i class="fas fa-robot"></i> Automações</span>
+                    <span class="skill-tag especialidade" data-icon="fas fa-paint-brush"><i class="fas fa-paint-brush"></i> UI/UX Moderno</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="projetos" class="section reveal">
+        <div class="section-header reveal">
+            <h2>Meus <span>Projetos</span></h2>
+            <p class="subtitle">Clique em um projeto para ver mais detalhes</p>
+        </div>
+        <div class="projects-grid reveal">
+
+            <div class="project-card" onclick="toggleProject(this)">
+                <div class="icon"><i class="fas fa-rocket"></i></div>
+                <h3>Plataforma de Gestão</h3>
+                <p>Dashboard que simplificou a gestão de equipes e aumentou a produtividade em 35%.</p>
+                <div class="tags">
+                    <span class="tag">UX Design</span>
+                    <span class="tag">Figma</span>
+                    <span class="tag">Pesquisa</span>
+                </div>
+                <div class="click-hint-wrapper">
+                    <span class="hint-icon"><i class="fas fa-chevron-down"></i></span>
+                    <span class="hint-text">Clique para expandir</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Detalhes:</strong> Desenvolvi um painel completo com gráficos em tempo real, gestão de tarefas e relatórios automatizados. A interface foi desenhada para ser intuitiva e reduzir o tempo de treinamento da equipe.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(this)">
+                <div class="icon"><i class="fas fa-palette"></i></div>
+                <h3>Identidade Visual</h3>
+                <p>Rebranding completo de uma startup de tecnologia. A marca ficou mais moderna e memorável.</p>
+                <div class="tags">
+                    <span class="tag">Branding</span>
+                    <span class="tag">Illustrator</span>
+                    <span class="tag">Estratégia</span>
+                </div>
+                <div class="click-hint-wrapper">
+                    <span class="hint-icon"><i class="fas fa-chevron-down"></i></span>
+                    <span class="hint-text">Clique para expandir</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Detalhes:</strong> Criei um novo logotipo, paleta de cores, tipografia e guia de identidade. A nova marca foi aplicada em site, redes sociais e materiais impressos, gerando um aumento de 40% no reconhecimento da marca.</p>
+                </div>
+            </div>
+
+            <div class="project-card" onclick="toggleProject(this)">
+                <div class="icon"><i class="fas fa-chart-line"></i></div>
+                <h3>Landing Page de Alto Impacto</h3>
+                <p>Página de vendas com copy e design otimizados. Conversão saltou de 2% para 15%.</p>
+                <div class="tags">
+                    <span class="tag">Copywriting</span>
+                    <span class="tag">HTML/CSS</span>
+                    <span class="tag">A/B Test</span>
+                </div>
+                <div class="click-hint-wrapper">
+                    <span class="hint-icon"><i class="fas fa-chevron-down"></i></span>
+                    <span class="hint-text">Clique para expandir</span>
+                </div>
+                <div class="project-details">
+                    <p><strong>Detalhes:</strong> Estruturei a página com base em mapas de calor e testes A/B. O design focado em conversão, combinado com um copy persuasivo, resultou em um crescimento expressivo nas vendas em apenas 30 dias.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="contato" class="section reveal">
+        <div class="contact-box reveal">
+            <h2>Vamos <span>trabalhar</span> juntos?</h2>
+            <p>Se você tem uma ideia, um projeto ou só quer trocar uma ideia —<br>me mande uma mensagem. Vou adorar conversar!</p>
+            <div class="contact-links">
+                <a href="https://discord.com/users/reivison009_" target="_blank" class="discord-btn"><i class="fab fa-discord"></i> Discord</a>
+                <a href="https://github.com/Reivison009" target="_blank" class="github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        © 2026 <span>Reivison</span> • Feito com propósito e <i class="fas fa-heart" style="color: var(--primary);"></i>
+    </footer>
+
+    <!-- JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
