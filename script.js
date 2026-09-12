@@ -67,18 +67,37 @@ function toggleProject(card) {
 function toggleTimeline(item) {
     const isActive = item.classList.contains('active');
 
-    // Fechar todos os outros itens
     document.querySelectorAll('.timeline-item').forEach(other => {
         if (other !== item) {
             other.classList.remove('active');
         }
     });
 
-    // Alternar o item clicado
     if (isActive) {
         item.classList.remove('active');
     } else {
         item.classList.add('active');
+    }
+}
+
+// ===== EXEMPLOS TOGGLE =====
+function toggleExemplo(card) {
+    const details = card.querySelector('.exemplo-details');
+    const isActive = card.classList.contains('active');
+
+    document.querySelectorAll('.exemplo-card').forEach(c => {
+        if (c !== card) {
+            c.classList.remove('active');
+            c.querySelector('.exemplo-details').classList.remove('open');
+        }
+    });
+
+    if (isActive) {
+        card.classList.remove('active');
+        details.classList.remove('open');
+    } else {
+        card.classList.add('active');
+        details.classList.add('open');
     }
 }
 
@@ -87,7 +106,6 @@ const darkToggle = document.getElementById('darkToggle');
 const toggleText = document.getElementById('toggleText');
 const icon = darkToggle.querySelector('i');
 
-// Verificar preferência salva
 if (localStorage.getItem('theme') === 'dark') {
     document.body.classList.add('dark');
     toggleText.textContent = 'Light';
