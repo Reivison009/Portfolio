@@ -1,4 +1,3 @@
-// ===== REVEAL ANIMATION =====
 const revealElements = document.querySelectorAll('.reveal');
 
 const revealObserver = new IntersectionObserver((entries) => {
@@ -14,7 +13,6 @@ const revealObserver = new IntersectionObserver((entries) => {
 
 revealElements.forEach(el => revealObserver.observe(el));
 
-// ===== SKILLS TAGS =====
 function setupTechTags(containerId) {
     const tags = document.querySelectorAll(`#${containerId} .skill-tag`);
     tags.forEach(tag => {
@@ -28,7 +26,6 @@ function setupTechTags(containerId) {
 setupTechTags('tech-tags');
 setupTechTags('especialidade-tags');
 
-// ===== PROJECTS TOGGLE =====
 function toggleProject(card) {
     const details = card.querySelector('.project-details');
     const hintWrapper = card.querySelector('.click-hint-wrapper');
@@ -63,7 +60,6 @@ function toggleProject(card) {
     }
 }
 
-// ===== TIMELINE TOGGLE =====
 function toggleTimeline(item) {
     const isActive = item.classList.contains('active');
 
@@ -80,7 +76,6 @@ function toggleTimeline(item) {
     }
 }
 
-// ===== EXEMPLOS TOGGLE =====
 function toggleExemplo(card) {
     const details = card.querySelector('.exemplo-details');
     const isActive = card.classList.contains('active');
@@ -101,7 +96,6 @@ function toggleExemplo(card) {
     }
 }
 
-// ===== DARK MODE TOGGLE =====
 const darkToggle = document.getElementById('darkToggle');
 const toggleText = document.getElementById('toggleText');
 const icon = darkToggle.querySelector('i');
